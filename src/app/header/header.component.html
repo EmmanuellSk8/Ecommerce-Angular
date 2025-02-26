@@ -1,0 +1,97 @@
+<header id="home" style="margin: 0 auto;" class="flex justify-between items-center py-5 w-[1120px] mx-auto">
+    <nav class="flex flex-row gap-x-14 opacity-80">
+        <a id="btn-sesion-responsive" class="opacity-80 text-lg flex right-10 mr-24 items-center gap-1" href="">Cerrar
+            sesión
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-logout">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+                <path d="M9 12h12l-3 -3" />
+                <path d="M18 15l3 -3" />
+            </svg>
+        </a>
+        <a class="opacity-80 text-lg" href="#home">Inicio</a>
+        <a class="opacity-80 text-lg" href="#products">Productos</a>
+        <a class="opacity-80 text-lg" href="#about">Acerca de nosotros</a>
+        <a class="opacity-80 text-lg" href="#contact">Contacto</a>
+    </nav>
+
+    <a id="btn-sesion" class="opacity-80 text-lg flex right-10 mr-24 absolute items-center gap-1" href="">Cerrar sesión
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-logout">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+            <path d="M9 12h12l-3 -3" />
+            <path d="M18 15l3 -3" />
+        </svg>
+    </a>
+
+</header>
+
+<style>
+    a {
+        transition: 0.2s;
+    }
+
+    #btn-sesion-responsive {
+        display: none;
+    }
+
+    a:hover {
+        text-shadow:
+            0 0 10px rgba(255, 255, 255, 0.5),
+            0 0 20px rgba(255, 0, 0, 0.3),
+            0 0 30px rgba(0, 255, 0, 0.2);
+        color: rgb(70, 67, 67);
+        transform: scale(1.1);
+        opacity: 100;
+    }
+
+    @media screen and (max-width: 1145px) {
+        #header {
+            justify-content: start;
+            gap: 4rem;
+        }
+
+        #avatar {
+            margin-inline: 2rem;
+        }
+    }
+
+    @media screen and (max-width: 810px) {
+        nav {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-left: 1rem;
+        }
+
+        #header {
+            gap: 20rem;
+        }
+
+        #btn-sesion {
+            margin: 0;
+        }
+
+    }
+
+
+    @media screen and (max-width: 410px) {
+        #header {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #btn-sesion {
+            display: none;
+        }
+
+        #btn-sesion-responsive {
+            display: flex;
+        }
+
+    }
+</style>

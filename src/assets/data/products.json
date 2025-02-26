@@ -1,0 +1,125 @@
+{
+  "storeName": "TechHorizon",
+  "products": [
+    {
+      "name": "Laptop ASUS ROG Strix G16",
+      "price": 1599,
+      "description": "Laptop gamer con Intel Core i7, 16GB RAM, RTX 4060, SSD 1TB.",
+      "image": "laptop-asus-rog-strix-g16.jpg"
+    },
+    {
+      "name": "MacBook Air M2 (2023)",
+      "price": 1199,
+      "description": "Laptop ultradelgada con chip M2, 8GB RAM, SSD 256GB, pantalla Retina.",
+      "image": "macbook-air-m2.jpg"
+    },
+    {
+      "name": "Monitor LG UltraGear 27\"",
+      "price": 349,
+      "description": "Monitor gaming 27\", 165Hz, 1ms, resolución QHD, G-Sync compatible.",
+      "image": "monitor-lg-ultragear-27.jpg"
+    },
+    {
+      "name": "Teclado Mecánico Keychron K8",
+      "price": 99,
+      "description": "Teclado mecánico inalámbrico con switches hot-swappable y RGB.",
+      "image": "teclado-keychron-k8.jpg"
+    },
+    {
+      "name": "Mouse Logitech G Pro X Superlight",
+      "price": 129,
+      "description": "Mouse gamer ultraligero, sensor HERO 25K, sin cables.",
+      "image": "mouse-logitech-g-pro-x.jpg"
+    },
+    {
+      "name": "SSD Samsung 990 Pro 1TB",
+      "price": 149,
+      "description": "SSD NVMe PCIe 4.0 de alto rendimiento, hasta 7,450 MB/s.",
+      "image": "ssd-samsung-990-pro.jpg"
+    },
+    {
+      "name": "Tarjeta Gráfica RTX 4070 Ti",
+      "price": 799,
+      "description": "GPU NVIDIA de última generación con DLSS 3 y Ray Tracing.",
+      "image": "tarjeta-grafica-rtx-4070-ti.jpg"
+    },
+    {
+      "name": "Audífonos Sony WH-1000XM5",
+      "price": 349,
+      "description": "Auriculares Bluetooth con cancelación de ruido y sonido Hi-Res.",
+      "image": "audifonos-sony-wh-1000xm5.jpg"
+    },
+    {
+      "name": "Silla Gamer Secretlab Titan EVO",
+      "price": 499,
+      "description": "Silla ergonómica para gamers con ajuste lumbar y reposabrazos 4D.",
+      "image": "silla-gamer-secretlab-titan.jpg"
+    },
+    {
+      "name": "Smartwatch Apple Watch Series 9",
+      "price": 399,
+      "description": "Reloj inteligente con pantalla siempre activa y sensores de salud avanzados.",
+      "image": "smartwatch-apple-watch-9.jpg"
+    },
+    {
+      "name": "Tablet Samsung Galaxy Tab S9",
+      "price": 799,
+      "description": "Pantalla AMOLED 120Hz, Snapdragon 8 Gen 2, 12GB RAM, S-Pen incluido.",
+      "image": "tablet-samsung-galaxy-tab-s9.jpg"
+    },
+    {
+      "name": "Router ASUS ROG Rapture GT-AX11000",
+      "price": 499,
+      "description": "Router WiFi 6 con triple banda, optimizado para gaming.",
+      "image": "router-asus-rog-rapture.jpg"
+    },
+    {
+      "name": "Cámara GoPro Hero 12 Black",
+      "price": 399,
+      "description": "Cámara de acción 5.3K, estabilización HyperSmooth, resistente al agua.",
+      "image": "camara-gopro-hero-12.jpg"
+    },
+    {
+      "name": "Disco Duro Externo WD Black 5TB",
+      "price": 159,
+      "description": "Almacenamiento portátil con carcasa reforzada para gaming y backups.",
+      "image": "disco-duro-wd-black-5tb.jpg"
+    },
+    {
+      "name": "Cargador Inalámbrico Anker 3 en 1",
+      "price": 79,
+      "description": "Base de carga rápida para iPhone, Apple Watch y AirPods.",
+      "image": "cargador-inalambrico-anker.jpg"
+    },
+    {
+      "name": "Drone DJI Mini 3 Pro",
+      "price": 749,
+      "description": "Drone ligero con grabación 4K HDR, detección de obstáculos y 34 min de vuelo.",
+      "image": "drone-dji-mini-3-pro.jpg"
+    },
+    {
+      "name": "Consola PlayStation 5",
+      "price": 499,
+      "description": "Consola de nueva generación con SSD ultra rápido y gráficos en 4K.",
+      "image": "consola-playstation-5.jpg"
+    },
+    {
+      "name": "Auriculares Razer BlackShark V2 Pro",
+      "price": 179,
+      "description": "Headset inalámbrico para gaming con sonido THX Spatial Audio.",
+      "image": "auriculares-razer-blackshark-v2.jpg"
+    },
+    {
+      "name": "Cámara Logitech Brio 4K",
+      "price": 179,
+      "description": "Webcam 4K con HDR, autoenfoque y micrófonos duales.",
+      "image": "camara-logitech-brio-4k.jpg"
+    },
+    {
+      "name": "Micrófono HyperX QuadCast S",
+      "price": 159,
+      "description": "Micrófono USB con iluminación RGB, ideal para streaming y podcasting.",
+      "image": "microfono-hyperx-quadcast-s.jpg"
+    }
+  ]
+}
