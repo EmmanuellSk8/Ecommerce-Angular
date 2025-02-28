@@ -20,6 +20,10 @@ export class RegisterComponent {
       console.error('Formulario inválido');
     }
   }
+
+  logIn() {
+    this.router.navigateByUrl('/login', { replaceUrl: true });
+  }
 }
 
 
