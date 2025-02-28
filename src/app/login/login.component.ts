@@ -1,11 +1,27 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { FormsModule, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
-  imports: [],
+  standalone: true,
   templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  styleUrls: ['./login.component.css'],
+  imports: [FormsModule]
 })
 export class LoginComponent {
+  constructor(private router: Router) {}
 
+  login(form: NgForm) {
+    if (form.valid) {
+      console.log('Formulario válido, iniciando sesión...');
+      this.router.navigateByUrl('/layout', { replaceUrl: true });
+    } else {
+      console.log('Formulario inválido');
+    }
+  }
+
+  goToRegister() {
+    this.router.navigate(['/register']);
+  }
 }
