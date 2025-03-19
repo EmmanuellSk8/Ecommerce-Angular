@@ -1,6 +1,7 @@
 <header id="home" style="margin: 0 auto;" class="flex justify-between items-center py-5 w-[1120px] mx-auto">
     <nav class="flex flex-row gap-x-14 opacity-80">
-        <a id="btn-sesion-responsive" class="opacity-80 text-lg flex right-10 mr-24 items-center gap-1 cursor-pointer" (click)="logout()">Cerrar
+        <a id="btn-sesion-responsive" class="opacity-80 text-lg flex right-10 mr-24 items-center gap-1 cursor-pointer"
+            (click)="logout()">Cerrar
             sesión
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -11,13 +12,14 @@
                 <path d="M18 15l3 -3" />
             </svg>
         </a>
-        <a class="opacity-80 text-lg" href="#home">Inicio</a>
-        <a class="opacity-80 text-lg" href="#products">Productos</a>
-        <a class="opacity-80 text-lg" href="#about">Acerca de nosotros</a>
-        <a class="opacity-80 text-lg" href="#contact">Contacto</a>
+        <a class="opacity-80 text-lg" [routerLink]="['/layout']" fragment="home">Inicio</a>
+        <a class="opacity-80 text-lg" [routerLink]="['/layout']" fragment="products">Productos</a>
+        <a class="opacity-80 text-lg" [routerLink]="['/layout']" fragment="about">Acerca de nosotros</a>
+        <a class="opacity-80 text-lg" [routerLink]="['/layout']" fragment="contact">Contacto</a>
     </nav>
 
-    <a id="btn-sesion" class="opacity-80 text-lg flex right-10 mr-24 absolute items-center gap-1 cursor-pointer" (click)="logout()">Cerrar sesión
+    <a id="btn-sesion" class="opacity-80 text-lg flex right-10 mr-24 absolute items-center gap-1 cursor-pointer"
+        (click)="logout()">Cerrar sesión
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             class="icon icon-tabler icons-tabler-outline icon-tabler-logout">

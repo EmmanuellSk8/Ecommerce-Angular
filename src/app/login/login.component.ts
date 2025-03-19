@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { AuthService } from '../services/services.component';
 
 @Component({
@@ -15,16 +15,36 @@ export class LoginComponent {
   loginForm: FormGroup;
   errorMessage: string = '';
 
-  constructor(private router: Router, private authService: AuthService, private fb: FormBuilder) {
+  constructor(private router: Router, private authService: AuthService, private fb: FormBuilder, private route: ActivatedRoute) {
     this.loginForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(6)]],
     });
   }
 
+  iniciarSesion() {
+    if (this.loginForm.invalid) {
+      this.loginForm.markAllAsTouched();
+      return;
+    }
+
+    const userEmail = this.loginForm.get('email')?.value;
+    const userPsw = this.loginForm.get('password')?.value;
+
+    if (userEmail === "root@gmail.com" && userPsw === "root12") {
+      
+      const fragment = this.route.snapshot.fragment ?? undefined;
+
+      this.router.navigate(['/layout'], { fragment: fragment });
+
+    } else {
+      this.errorMessage = 'El email debe ser root@gmail.com y la contraseña root12';
+    }
+  }
+
   getErrorMessage(field: string): string {
     const control = this.loginForm.get(field);
-  
+
     if (control?.hasError('required')) {
       return 'Este campo es obligatorio';
     }
@@ -36,25 +56,25 @@ export class LoginComponent {
     }
     return '';
   }
-  
-  login() {
-    if (this.loginForm.invalid) {
-      this.loginForm.markAllAsTouched(); 
-      console.error('Formulario inválido');
-      return;
-    }
-  
-    this.authService.login(this.loginForm.value).subscribe({
-      next: () => {
-        console.log('Login exitoso');
-        this.router.navigateByUrl('/layout', { replaceUrl: true });
-      },
-      error: (err) => {
-        console.error('Error al iniciar sesión', err);
-        this.errorMessage = 'Error al iniciar sesión';
-      }
-    });
-  }
+
+  // login() {
+  //   if (this.loginForm.invalid) {
+  //     this.loginForm.markAllAsTouched();
+  //     console.error('Formulario inválido');
+  //     return;
+  //   }
+
+  //   this.authService.login(this.loginForm.value).subscribe({
+  //     next: () => {
+  //       console.log('Login exitoso');
+  //       this.router.navigateByUrl('/layout', { replaceUrl: true });
+  //     },
+  //     error: (err) => {
+  //       console.error('Error al iniciar sesión', err);
+  //       this.errorMessage = 'Error al iniciar sesión';
+  //     }
+  //   });
+  // }
 
   goToRegister() {
     this.router.navigateByUrl('/register');

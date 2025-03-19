@@ -6,16 +6,16 @@
             </a>
             <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                 <li>
-                    <a href="#home" class="hover:underline me-4 md:me-6">Inicio</a>
+                    <a [routerLink]="['/layout']" fragment="home" class="hover:underline me-4 md:me-6">Inicio</a>
                 </li>
                 <li>
-                    <a href="#about" class="hover:underline me-4 md:me-6">Acerca de nosotros</a>
+                    <a [routerLink]="['/layout']" fragment="about" class="hover:underline me-4 md:me-6">Acerca de nosotros</a>
                 </li>
                 <li>
-                    <a href="#products" class="hover:underline me-4 md:me-6">Productos</a>
+                    <a [routerLink]="['/layout']" fragment="products" class="hover:underline me-4 md:me-6">Productos</a>
                 </li>
                 <li>
-                    <a href="#contact" class="hover:underline">Contacto</a>
+                    <a [routerLink]="['/layout']" fragment="contact" class="hover:underline">Contacto</a>
                 </li>
             </ul>
         </div>
